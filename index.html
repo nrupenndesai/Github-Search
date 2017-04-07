@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/tether.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/github.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+	<div class="container">
+		<div id="search" class="form-group">
+			<div class="search logo">
+			<img src="images/github.png" alt="github logo"/><br/>
+			</div>
+			<div class="search search-box">
+				
+				<input type="text" name="search-box" class="form-control center"
+					placeholder="Enter Repo Name To Search" id="search-box-input"
+					required />
+			</div>
+			<div class="search">
+				<button type="button" id="search-repo" class="btn btn-primary">Search</button>
+			</div>
+		</div>
+
+		<div id="repo-list-container">
+			<button id="search_back">Back</button>
+			<div id="repo-list"></div>
+		</div>
+		<div id="repo-issue-list">
+			<button id="repo_list">Back</button>
+			<div id="repo-info">
+				<div id="repo-name">
+					<h1></h1>
+				</div>
+				<div id="repo-owner">
+					<h3></h3>
+				</div>
+				<div id="issue_list"></div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/github.js"></script>
+
+</html>

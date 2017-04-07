@@ -1,0 +1,44 @@
+@CHARSET "ISO-8859-1";
+
+.search {
+	text-align: center;
+}
+
+.search-box {
+/* 	margin: 100px 0px 10px 0px; */
+}
+
+#search-box-input {
+/* 	width: 500px; */
+}
+
+.logo{
+	margin : 100px 0px 45px 0px;
+}
+
+.container {
+	
+}
+
+.repo {
+	border: 1px solid;
+	margin: 25px;
+	padding: 15px;
+}
+
+.repo-description {
+	margin-left: 50px;
+}
+
+.repo-count {
+	font-size: 12px;
+	margin-top: 15px;
+}
+
+#repo-name {
+	text-align: center;
+}
+
+#repo-owner {
+	text-align: center;
+}
