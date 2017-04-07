@@ -12,27 +12,27 @@
 
 <body>
 	<div class="container">
-		<div id="search" class="form-group">
+		<div id="search" class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			<div class="search logo">
 			<img src="images/github.png" alt="github logo"/><br/>
 			</div>
 			<div class="search search-box">
 				
 				<input type="text" name="search-box" class="form-control center"
-					placeholder="Enter Repo Name To Search" id="search-box-input"
+					placeholder="Enter Repository Name To Search" id="search-box-input"
 					required />
 			</div>
 			<div class="search">
-				<button type="button" id="search-repo" class="btn btn-primary">Search</button>
+				<button type="button" id="search-repo" class="col-lg-4 col-md-4 col-sm-4 col-xs-4 btn btn-primary search-button">Search Repository</button>
 			</div>
 		</div>
 
 		<div id="repo-list-container">
-			<button id="search_back">Back</button>
-			<div id="repo-list"></div>
+			<button id="search_back" class="col-lg-4 col-md-4 col-sm-4 col-xs-4 btn btn-primary search-button">Back</button>
+			<div id="repo-list" class="list-group"></div>
 		</div>
 		<div id="repo-issue-list">
-			<button id="repo_list">Back</button>
+			<button id="repo_list" class="col-lg-4 col-md-4 col-sm-4 col-xs-4 btn btn-primary">Back</button>
 			<div id="repo-info">
 				<div id="repo-name">
 					<h1></h1>

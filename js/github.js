@@ -24,13 +24,13 @@ $("#search-repo").on("click", function(){
   		if(repos.length){
   			$("#repo-list").empty();
   			repos.forEach(function (repo, index){
-				 $("#repo-list").append("<div class=repo onclick=getRepoIssue("+index+")>" +
-				 							"<div>" +
+				 $("#repo-list").append('<div class= "list-group-item list-group-item-action" onclick=getRepoIssue('+index+")>" +
+				 							"<div >" +
 				 								"<label>"+repo.name+"</label>"+
 				 								"<label class=repo-description>"+repo.description+"<label>" +
 				 							"</div>" +
-				 							"<div class=repo-count>" +
-				 								"<label>Star: </label> "+repo.star_count+
+				 							'<div style="width : 100%">' +
+				 								"<small>Star: "+repo.star_count+ "</small> "+
 				 							"</div>" +
 				 						"</div>"); 				
   			});
@@ -72,9 +72,9 @@ function getRepoIssue(repo_index){
 			$("#issue_list").empty();
 			issue_list.forEach(function(issue){
 				if(issue.state==="open"){
-					$("#issue_list").append("<div><input type=checkbox />"+issue.title+"</div>");
+					$("#issue_list").append('<div class="input-group move-down"><span class="input-group-addon right-move"><input type=checkbox /></span>'+issue.title+"</div>");
 				}else{
-					$("#issue_list").append("<div><input type=checkbox checked/>"+issue.title+"</div>");
+					$("#issue_list").append('<div><span class="input-group-addon"><input type=checkbox checked/> </span>'+issue.title+"</div>");
 				}
 			});
 		}else{

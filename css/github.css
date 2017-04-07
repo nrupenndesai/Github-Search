@@ -42,3 +42,15 @@
 #repo-owner {
 	text-align: center;
 }
+
+.search-button{
+	margin : 20px;
+}
+
+.right-move{
+	margin-right : 10px;
+}
+
+.move-down{
+	margin-bottom : 10px;
+}
